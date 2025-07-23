@@ -1,22 +1,26 @@
 const element = document.querySelector('.wrapper .row');
 const input = document.querySelector('section input.form-control');
-const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const monthsOfYear = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"];
+const button = document.querySelector('button.search');
 
 input.addEventListener('input', (e) => {
     renderForecast(e.target.value)
 });
 
+button.addEventListener('click', () => {
+    renderForecast(input.value)
+});
+
 const renderForecast = async (search = 'cairo') => {
         const data = await fetchForecast(search);
-        console.log(data.forecast.forecastday[0])
         const htmlData = data.forecast.forecastday.map((dayData, index) => {
+
             const date = new Date(dayData.date);
-            const dayName = daysOfWeek[date.getDay()];
-            const HtmlDate = `<span>${date.getDate()}${monthsOfYear[date.getMonth()]}</span>`;
+            const dayName = date.toLocaleDateString("en-US", { weekday: "long" });
+            const monthName = date.toLocaleDateString("en-US", { month: "long" });
+            const HtmlDate = `<span>${date.getDate()} ${monthName}</span>`;
+
             return index == 0 ? `
-                                <div class="card col-md-4 clo-sm-12">
+                        <div class="card col-md-4 clo-sm-12">
                         <div class="card-header d-flex justify-content-between align-content-center">
                             <span>${dayName}</span>
                             ${HtmlDate}
@@ -45,8 +49,7 @@ const renderForecast = async (search = 'cairo') => {
                             </div>
                         </div>
                     </div>
-            `:
-                `
+            `: `
                     <div class="card col-md-4 clo-sm-12">
                         <div class="card-header d-flex justify-content-center align-content-start">
                             ${dayName}
@@ -62,6 +65,7 @@ const renderForecast = async (search = 'cairo') => {
                     </div>
             `
         }).join('');
+        
         element.innerHTML = htmlData;
 }
 
