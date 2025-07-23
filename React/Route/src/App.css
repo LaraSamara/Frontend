@@ -1,0 +1,162 @@
+nav,
+footer {
+  background-color: #2C3E50 !important;
+}
+
+.line {
+  width: 80px;
+  height: 4px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.line {
+  background-color: #fff;
+}
+
+/* Navbar */
+
+nav a {
+  color: #fff !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}
+
+nav .navbar-brand {
+  font-size: 32px;
+}
+
+nav li a {
+  font-size: 16px;
+}
+
+.navbar-nav .active {
+  padding: 10px 15px;
+  background-color: #1ABC9C;
+  border-radius: 10px;
+}
+
+/* Start */
+.img {
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-image: url('assets/avataaars.svg');
+
+}
+
+.start {
+  padding: 1rem 0;
+}
+
+/* About */
+.about,
+.start {
+  background-color: #1ABC9C;
+}
+
+.about {
+  padding: 7rem 0;
+}
+
+.about .block {
+  width: 70% !important;
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding: 2rem 0;
+}
+
+.portfolio .line,
+.contact .line {
+  background-color: #2C3E50;
+}
+
+.portfolio .star,
+.contact .star,
+.portfolio h1,
+.contact h1 {
+  color: #2C3E50;
+}
+
+.portfolio .card-img-top {
+  border-radius: 10px;
+  position: relative;
+}
+
+.portfolio .card {
+  position: relative;
+  cursor: pointer;
+}
+
+.portfolio .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1abc9cd5;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.portfolio .hover .plus {
+  color: #fff;
+  font-size: 8rem;
+  font-weight: 900;
+}
+
+.portfolio .card:hover .hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Contact */
+.btn-green,
+.btn-green:hover {
+  background-color: #1ABC9C;
+}
+
+/* Footer */
+footer {
+  color: #fff !important;
+}
+
+footer .upper {
+  padding: 4rem 0;
+}
+
+footer h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+footer .icons span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer .lower {
+  background-color: #1A252F !important;
+  font-size: 16px;
+  font-weight: 400;
+}

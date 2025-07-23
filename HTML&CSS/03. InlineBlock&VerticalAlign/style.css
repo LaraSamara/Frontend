@@ -1,0 +1,48 @@
+
+img{
+    width: 100%;
+}
+h2{
+    color: #303030;
+    font-size: 32px;
+}
+p, .item{
+    font-size: 17px;
+    color: rgb(104, 104, 104);
+    width: 100%;
+}
+.spacer{
+    display: inline-block;
+    width: 5%;
+    min-height: 20px;
+}
+.who, .location{
+    display: inline-block;
+    text-align: center;
+}
+.text{
+    text-align: left;
+}
+/* who section */
+.image, .text{
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}
+.item{
+    height: 60px;
+}
+.item span{
+    vertical-align: middle;
+    display: inline-block;
+}
+span.icon{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #EAEAEA solid 2px;
+}
+/* location */
+.location{
+    background: #F8F8F8;
+}

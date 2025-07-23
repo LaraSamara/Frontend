@@ -1,0 +1,289 @@
+/* Public */
+.heading .bar{
+    width: 3.5rem;
+    height: 5px;
+    background-color: #0078FF
+}
+
+/* Navbar */
+
+nav .nav-link {
+    position: relative;
+    outline: none;
+    border: none;
+}
+
+nav .nav-link.active::after,
+nav .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    bottom: 0;
+    width: 80%;
+    height: 2px;
+    background: #fff;
+}
+
+nav .nav-link::before {
+    transition: width ease 0.3s;
+    width: 0%;
+}
+
+nav .nav-link:hover::before {
+    width: 80%;
+}
+
+@media (max-width: 991px) {
+    nav .navbar-collapse {
+        background: #fff;
+    }
+
+    nav .nav-item .nav-link {
+        color: #000 !important;
+    }
+}
+
+/* Header */
+.header {
+    background: url('../images/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 72px;
+}
+
+.header span {
+    font-size: 40px;
+}
+
+@media (max-width: 850px) {
+    .header h1 {
+        font-size: 50px;
+    }
+
+    .header span {
+        color: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header h1 {
+        font-size: 35px;
+    }
+
+    .header span {
+        color: 20px;
+    }
+}
+
+/* About */
+#about .container-shadow,
+#contact .container-shadow{
+    box-shadow: 0px 0px 10px #7a7a7a;
+}
+
+#about .progress {
+    border-radius: 0 !important;
+    --bs-progress-height: 0.7rem
+}
+
+.bg-blue {
+    background: #0078FF;
+}
+
+#about h2::before,
+#contact h2::before {
+    content: '';
+    width: 18%;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background: #0078FF;
+
+}
+
+.inner h3 span{
+    color: #4e4e4e;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Services */
+.gy-6{
+    row-gap: 4.5rem;
+}
+
+#services{
+    background-color: #F5F5F5;
+}
+
+#services .card,
+#portfolio .card {
+    box-shadow: 0px 0px 10px #7a7a7a4d;
+}
+
+#services .icon {
+    width: 120px;
+    height: 120px;
+    background-color: #0078FF;
+    transition: background-color ease 0.4s, color ease 0.4s;
+}
+
+#services .card:hover .icon {
+    color: #fff;
+    background-color: #CDE1F8;
+}
+
+#services .icon .icon-container {
+    width: 100px;
+    height: 100px;
+    transition: background-color ease 0.4s;
+}
+
+#services .card:hover .icon .icon-container {
+    background-color: #0078FF !important;
+}
+
+#services i {
+    font-size: 40px;
+}
+
+/* Counter */
+
+.counter{
+    background: url('../images/counters.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.counter .overlay,
+.carousel-inner .overlay,
+#contact .overlay{
+    background-color: #0d61c1ca;
+}
+
+.counter .icon {
+    width: 80px;
+    height: 80px;
+    border: 10px solid #ffffffa1;
+}
+
+.counter .icon i {
+    font-size: 32px;
+}
+
+/* Portfolio */
+#portfolio{
+    background-color: #F5F5F5;
+}
+
+#portfolio .card img{
+    transition: transform ease-out 0.3s;
+}
+
+#portfolio .card:hover img{
+    transform: scale(1.2);
+} 
+
+#portfolio .icon{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #0078FF;
+    color: #0078FF;
+}
+
+#portfolio .card span{
+    color: #0078FF;
+}
+
+#portfolio p{
+    font-size: 0.8rem;
+}
+
+/* carousel */
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.carousel-item,
+#contact{
+    background-image: url('../images/overlay.jpg') !important;
+    background-position: center;
+}
+
+.carousel-item{
+    padding: 12rem 0;
+}
+
+.carousel-indicators{
+    bottom: 130px !important;
+}
+/* Blog */
+#blog{
+    background: #F5F5F5;
+}
+
+ul li .image{
+    width: 40px;
+    height: 40px;;
+}
+
+.card .img::after{
+    content: 'WEB DESIGN';
+    padding: 10px 6px;
+    background-color: #0078FF;
+    font-size: 0.8rem;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+}
+
+.card .img.travel::after{
+    content: 'TRAVEL';
+}
+
+/* Contact */
+
+#contact{
+    background-attachment: fixed;
+}
+
+.button-form{
+    width: 11rem;
+}
+
+.button-form button{
+    background-color: #0078FF;
+    border: 3px solid #fff;
+    transition: background-color ease 0.3s, border-color ease 0.3s;
+}
+
+.button-form button:hover{
+    background-color: #3393ff;
+    border-color: #80BCFF;
+}
+
+#contact ul li i{
+    color: #0078FF;
+}
+
+#contact .icon{
+    width: 40px;
+    height: 40px;
+    border: #0078FF 3px solid;
+}
+
+/* Footer */
+.footer{
+    background: #0062D3;
+}

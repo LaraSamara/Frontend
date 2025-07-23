@@ -1,0 +1,88 @@
+body {
+    background-color: #F7ECDE;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+h1 {
+    width: fit-content;
+    color: #352E28;
+    font-size: 3.125rem;
+    font-weight: 500;
+    margin: 3rem 0;
+    font-family: "Pacifico", cursive;
+    font-style: normal;
+    position: relative;
+    z-index: 1;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: #FEC260;
+    bottom: 0;
+    z-index: -1;
+    transition: all ease 0.4s;
+}
+
+h1:hover::before {
+    height: 70%;
+}
+
+.dot {
+    border-top: dotted 2px #000;
+    margin: 3rem 0 1.5rem;
+}
+
+h2 {
+    width: fit-content;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Righteous", sans-serif;
+}
+
+h2 span {
+    margin: 0 8px;
+}
+
+.form {
+    padding-bottom: 2rem;
+    border-bottom: dotted 2px #000;
+}
+
+label {
+    color: #212529;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+label span {
+    margin-right: 10px;
+}
+
+.btn-brwn {
+    color: #fff;
+    background-color: #BB4120;
+    padding: 5px 3rem;
+}
+
+.btn-brwn:hover {
+    color: #fff;
+    background-color: #bb4220c9;
+}
+
+table {
+    margin-top: 2rem;
+    ;
+}
+
+.table-white {
+    background-color: #fff;
+}

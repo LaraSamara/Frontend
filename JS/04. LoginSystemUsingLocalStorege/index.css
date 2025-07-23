@@ -1,0 +1,37 @@
+body {
+    background-color: #24353F;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 2rem 0;
+}
+
+.home nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #24353F !important;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+form,
+.content {
+    width: 50%;
+    background-color: #24353F;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+section p a {
+    transition: text-decoration ease 0.3s;
+}
+
+section p a:hover {
+    text-decoration: underline !important;
+}

@@ -1,0 +1,322 @@
+/*public */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+h2{
+    color: RGB(48, 48, 48);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.clr{
+    clear: both;
+}
+
+.container{
+    margin: auto;
+    width: 75%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #00000024;
+}
+/* Nav */
+.nav{
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    z-index: 1;
+}
+.nav .logo{
+    width: 180px;
+    float: left;
+}
+
+.nav ul{
+    float: right;
+    padding: 10px 0;
+}
+
+.nav ul li{
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+/* header */
+.header{
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('Bakery images/images/drew-coffman-1872.jpg');
+}
+
+.header .content{
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+p{
+    font-size: 24px;;
+}
+
+.span{
+    font-size: 22px;
+}
+
+h1{
+    margin: 15px 0;
+    font-size: 76px;
+}
+
+.btns{
+    margin: 40px 0;
+}
+
+.btns a{
+    padding: 12px 18px;
+    border: 2px solid #fff;
+    margin: 0 5px;
+    border-radius: 6px;
+}
+
+.btns a.left{
+    background-color: #7E6146;
+    border-color: #7E6146;
+}
+/* who we are */
+.who, .location, .baking, .contact{
+    padding: 80px 0;
+    position: relative;
+}
+
+.who .image{
+    width: 40%;
+    float: left;
+}
+
+.who .content{
+    width: 50%;
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%); 
+}
+
+.who p,
+.location p,
+.baking p,
+.contact p{
+    margin: 20px 0;
+    font-size: 17px;
+    color: RGB(104, 104, 104)
+}
+
+.item{
+    margin: 15px 0;
+}
+
+.item .icon{
+    float: left;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: #EAEAEA solid 2px;
+}
+
+.item .data{
+    float: left;
+    color: RGB(104, 104, 104);
+    line-height: 40px;
+}
+/* location */
+.location, .contact{
+    background: #F8F8F8;
+}
+
+.location .image{
+    width: 40%;
+    float: right;
+}
+
+.location .content{
+    width: 35%;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%); 
+}
+/* baking */
+.baking{
+    text-align: center;
+}
+
+.baking-items .baking-item{
+    width: 33.3%;
+    float: left;
+}
+
+.baking-item .content {
+    width: 98%;
+}
+
+.baking-item .image{
+    width: 90%;
+}
+
+.baking-item .content h3{
+    font-size: 22px;
+    color: RGB(48, 48, 48);
+}
+
+.baking-item .content p{
+    font-size: 17px;
+    color: RGB(104, 104, 104)
+}
+
+/* contact */
+.contact .image{
+    width: 40%;
+    float: right;
+
+}
+
+.contact .content{
+    width: 35%;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%); 
+}
+
+.contact .items .item .icon{
+    background: #8E7754;
+    border: solid 1px #8E7754;
+}
+/* footer */
+.top, .bottom{
+    padding: 40px 0;
+}
+
+.top{
+background-color: #403D38;
+}
+
+.top p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.top .list{
+    float: left;
+    width: 25%;
+}
+
+.list .item-list .icon{
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+.list .item-list, 
+.list .item{
+    color: #969696;
+    margin: 20px 0;
+    padding: 15px 0;
+}
+
+.list .item-list{
+    width: 90%;
+    border-bottom: .3px solid #969696;
+}
+
+.list .item-list .txt{
+    float: left;
+    font-size: 16px;
+    width: 90%;
+}
+
+.top .list.contact-section{
+    background: url('Bakery images/images/contact-details-map.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.bottom{
+    background-color:#353330;
+}
+
+.bottom .content{
+    margin: auto;
+    text-align: center;
+}
+
+.bottom .logo{
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+.bottom .content p{
+    margin: 30px 0;
+    color: #777;
+    font-size: 15px;
+}
+
+.bottom .btns{
+    margin: 0;
+}
+
+.bottom .btns a{
+    padding: 0;
+    margin: 0 10px;
+    border-radius: 0;
+    border: none
+}
+
+.bottom .btns img{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #484540;
+    background-color: #484540;
+}
